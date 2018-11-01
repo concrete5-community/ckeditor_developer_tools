@@ -9,7 +9,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'ckeditor_developer_tools';
     protected $appVersionRequired = '8.2.1';
-    protected $pkgVersion = '0.9';
+    protected $pkgVersion = '0.9.1';
 
     public function getPackageName()
     {
