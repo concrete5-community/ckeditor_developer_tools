@@ -29,7 +29,7 @@ class Controller extends Package
     protected function registerPlugin()
     {
         $assetList = AssetList::getInstance();
-        //register our register.js asset
+        // register our register.js asset
         $assetList->register(
             'javascript',
             'editor/ckeditor/devtools',
@@ -38,7 +38,7 @@ class Controller extends Package
             $this->pkgHandle
         );
 
-        //add our register.js asset to a group
+        // add our register.js asset to a group
         $assetList->registerGroup(
             'editor/ckeditor/devtools',
             [
@@ -46,10 +46,11 @@ class Controller extends Package
             ]
         );
 
-        //associate our register.js group to the plugin
+        // associate our register.js group to the plugin
         $plugin = new Plugin();
         $plugin->setKey('devtools');
         $plugin->setName(t('CKEditor Developer Tools'));
+        $plugin->setDescription(t('This plugin displays tooltips with information about editor dialog windows (name, tab name, element ID, element type).'));
         $plugin->requireAsset('editor/ckeditor/devtools');
         $this->app->make('editor')->getPluginManager()->register($plugin);
     }
