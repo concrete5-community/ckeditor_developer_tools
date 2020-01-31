@@ -1,7 +1,7 @@
 # concrete5 CKEditor Developer Tools
 
 A packaged version of the CKEditor Developer Tools plugin for concrete5.  
-[https://ckeditor.com/addon/devtools](https://ckeditor.com/addon/devtools)
+[https://ckeditor.com/cke4/addon/devtools](https://ckeditor.com/cke4/addon/devtools)
 
 **Installation:**
 
